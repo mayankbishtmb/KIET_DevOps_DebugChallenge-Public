@@ -1,0 +1,33 @@
+Tasks:
+
+1. npm init -y
+npm install express
+npm install --save-dev @types/express
+
+2. touch index.js
+const express = require('express');
+const app = express();
+
+const PORT = 8080;
+
+app.get('/health', (req, res) => {
+    res.status(200).json({ status: "OK" });
+});
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
+
+To run the server: 
+node index.js
+curl http://localhost:8080/health
+
+3. git init
+
+4. git add .
+git commit -m "Initial commit - Node.js API"
+
+5. Go to github and create a repo named : nodejs-api
+git remote add origin https://github.com/mayankbishtmb/nodejs-api.git
+git branch -M main
+git push -u origin main
