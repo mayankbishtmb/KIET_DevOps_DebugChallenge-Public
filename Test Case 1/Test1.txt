@@ -1,0 +1,20 @@
+whoami
+w
+last
+uname -a
+hostnamectl
+uptime
+sudo groupadd developers
+sudo groupadd qa
+getent group developers
+getent group qa
+getent group
+sudo useradd -m -s /bin/bash -g developers aman
+sudo useradd -m -s /bin/bash -g developers ritu
+sudo useradd -m -s /bin/bash -g qa karan
+id aman
+id ritu
+id karan
+sudo pkill -KILL -u ritu
+sudo userdel -r ritu
+id ritu
